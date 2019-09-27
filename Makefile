@@ -7,15 +7,15 @@ all:
 install:
 	@echo ""
 	mkdir -p $(INSTALL_DIR)
-	cp shellmarks.sh $(INSTALL_DIR)
+	cp bookmark.sh $(INSTALL_DIR)
 	@echo ""
-	@echo "add 'source $(INSTALL_DIR)/shellmarks.sh' to your .bashrc/.zshrc"
+	@echo "add 'source $(INSTALL_DIR)/bookmark.sh' to your .bashrc/.zshrc"
 	@echo ''
 	@echo 'USAGE:'
 	@echo '------'
-	@echo 's <bookmark_name> - Saves the current directory as "bookmark_name"'
-	@echo 'g <bookmark_name> - Goes (cd) to the directory associated with "bookmark_name"'
-	@echo 'd <bookmark_name> - Deletes the bookmark'
-	@echo 'l                 - Lists all available bookmarks'
-	@echo 'g <tab>           - Tab completion is available for all commands'
-	@echo 'g --help          - Complete usage'
+	@echo 'b  - Bookmark list'
+	@echo 'a  - Add the current directory to bookmark'
+	@echo 't <bookmark_index>  - Goes (cd) to the directory associated with "bookmark_index"'
+	@echo 'r <bookmark_index> ...  - Deletes the bookmark with index'
+	@echo 'c - Deletes all bookmark'
+	@echo ""
